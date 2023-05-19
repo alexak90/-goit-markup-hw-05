@@ -41,8 +41,7 @@ h1,h2,h3,p {
   max-width: 1440px;
   margin: auto;
   border-bottom: 1px solid #e7e9fc;
-  /* padding-top: 24px;
-  padding-bottom: 24px; */
+ 
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
@@ -164,7 +163,7 @@ h1,h2,h3,p {
   color: #434455;
   transition-property: background-color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-text:hover,
 .link-text:focus {
@@ -442,7 +441,9 @@ text-transform: capitalize;
   color: #8e8f99;
   transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+
 }
  
 
@@ -574,7 +575,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   transition-property: background-color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 
@@ -660,10 +661,10 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
   opacity: 1;
-  visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+  
   pointer-events: all;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* transition: opacity 1000ms linear; */
+  
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 
@@ -677,6 +678,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .modal-close-icon {
